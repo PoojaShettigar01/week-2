@@ -1,0 +1,41 @@
+public void withdraw(){
+
+    System.out.println("Enter withdraw amount");
+
+      int amount=s.nextInt();
+
+      if(amount%100 == 0){
+
+        if(amount<=(acbal-500)){
+
+          if(amount<=20000){
+
+            System.out.println("Withdraw amount is "+amount);
+
+            acbal=acbal-amount;
+
+            System.out.println("available bal : "+acbal);
+
+          }
+
+          else{
+
+            System.out.println("Please enter amount less than 20000");
+
+          }
+
+          }
+
+        else{
+
+          System.out.println("less funds");
+
+        }
+
+      }else{
+
+        System.out.println("Enter multiples of 100's");
+
+      }
+
+    }

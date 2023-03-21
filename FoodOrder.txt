@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class FoodOrder {
+  public static void main(String[] args)
+  {
+    Scanner input=new Scanner(System.in);
+    System.out.println("Welcome to hotel");
+    System.out.println("1. Palav - Rs. 70");
+    System.out.println("2. Rice ball - Rs. 80");
+    System.out.println("3. Idli Wada - Rs. 50");
+    System.out.println("4. Dosa - Rs. 60");
+
+    System.out.println("Enter the no. of item to order");
+    int itemNumber = input.nextInt();
+
+    System.out.println("Enter the Quantity");
+    int quantity = input.nextInt();
+
+    System.out.println("Enter the GST");
+    double gstRate = input.nextDouble();
+
+    //total cost including GST
+    double itemCost = 0;
+    switch (itemNumber) {
+      case 1:
+        itemCost = 70;
+        break;
+      case 2:
+        itemCost = 80;
+        break;
+      case 3:
+        itemCost = 50;
+        break;
+      case 4:
+        itemCost = 60;
+        break;
+      default:
+        System.out.println("Invalid item number");
+        System.exit(0);
+      
+    }
+    double totalCost = itemCost * quantity;
+    double cgst = (totalCost * gstRate)/200;
+    double igst = (totalCost * gstRate)/100;
+
+    System.out.println("Order details");
+    System.out.println("item" + itemNumber);
+    System.out.println("Quantity" + quantity);
+    System.out.println("GST Rate" + gstRate);
+    System.out.println("CGST Rate" + cgst);
+    System.out.println("IGST Rate" + igst);
+    System.out.println("Total cost" + totalCost + cgst + igst);
+    
+  }
+  
+}

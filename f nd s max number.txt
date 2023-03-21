@@ -1,0 +1,36 @@
+/*first and sec max number*/
+
+
+import java.util.Scanner;
+public class FindLargestElement
+{
+Ppublic static void main(String[] args)
+{
+System.out.println("ENTER SIZE OF AN ARRAYA");
+Scanner scan = new Scanner(System.in);
+int size= scan.nextInt();
+int [] arr= new int(size);
+System.out.println("enter elements into array");
+for (int i=0;i<size;i++)
+{
+arr[i] =scan.nextInt();
+}
+int firstMax =arr[0];
+int secondMax=arr[0];
+for (int i=1;i<arr.lenght;i++)
+{
+if (arr[i]>firstMax)
+{
+    secondMax=firstMax;
+    firstMax=arr[i];
+}
+else is(arr[i]>secondMax)
+{
+secondMax=arr[i]>secondMax);
+}
+}
+System.out.println("first biggest number "+firstMax);
+System.out.println("second biggest number "+secondMax);
+}
+}
+

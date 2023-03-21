@@ -1,0 +1,19 @@
+wap even or odd
+
+import java.util.*;
+public class Evenorodd{
+  public static void main(System.in[]){
+    int num1;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter number1");
+    int num1=ip.nextInt();
+
+    if(num1%2=0){
+      System.out.println("even number");
+    }
+    else
+    {
+      System.out.println("odd number");
+    }
+  }
+}
